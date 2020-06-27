@@ -1,0 +1,38 @@
+
+function dangky(){
+
+	var b =document.getElementById('Email').value;
+	var a = document.getElementById('phone').value;
+
+	if (b.indexOf('@')<=0) {
+		document.getElementById("messages1").innerHTML="nhap sai ";
+	
+	if((b.charAt(b.length-4)!='.') (b.charAt(b.length-3)!='.'))
+	{
+		document.getElementById("messages1").innerHTML="nhap sai ";
+		
+	}
+	
+	if (a == ""){
+		document.getElementById("messages").innerHTML ="Không được để trống";
+		return true;
+	}
+	if (isNaN(a)){
+		document.getElementById("messages").innerHTML ="Không được nhập kí tự";
+		return true;		
+	}
+	if (a.length < 12){
+		document.getElementById("messages").innerHTML ="Độ dài kí tự không hợp lệ";
+		return true;
+	}
+	if (a.length > 12){
+		document.getElementById("messages").innerHTML ="Độ dài kí tự không hợp lệ";
+		return true;
+	}
+
+	else
+		document.getElementById('messages').innerHTML ="";
+		document.getElementById('messages1').innerHTML ="";
+		alert('Đăng ký thành công');
+		
+}

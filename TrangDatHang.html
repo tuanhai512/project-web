@@ -1,0 +1,155 @@
+<!DOCTYPE html >
+<html lang=vi>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale=1.0>
+        <title> Thế giới sách</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        
+        <script src="https://kit.fontawesome.com/454c0e581d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/styleDathang.css">
+       
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <form id="dat_hang" onsubmit="return validationForm()">
+            <div id="top">
+                <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+                    <div class="container-fluid"> 
+                        <a class="navbar-brand" href="#">
+                            <img src="image/logo.jpg" width="75" alt="Day la logo">
+                        </a>
+                        <h2>Thế giới sách</h2>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="TrangChu.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="TrangLogin.html"><span>Tài khoản</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="TrangLienHe.html"> Liên hệ</a>
+                                </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="TrangGioiThieu.html">Giới thiệu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="TrangDatHang.html"><i class="fas fa-shopping-cart">Giỏ hàng</i></a>
+                                </li>  
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="container">
+                <div class="row"> 
+                    <div class="col-sm-6">
+                        <div id="dia_chi" >
+                            <h2>Địa chỉ giao hàng</h2>
+                            <div class="form_diachi_group">
+                                <h2>Họ tên</h2>
+                                <input class="form_diachi_input" type="text" id="name" placeholder="Họ tên của bạn" required/>
+                                <div class="messages"></div>
+                            </div>
+                        <div class="form_diachi_group">
+                            <h2>Email</h2>
+                            <input class="form_diachi_input" type="text" id="email" placeholder="Email của bạn" required>
+                            <div class="messages"></div>
+                        </div>
+                        <div class="form_diachi_group">
+                            <h2>Tỉnh/Thành phố</h2>
+                            <input class="form_diachi_input" type="text" id="tp" placeholder="Tỉnh/Thành phố" required>
+                            <div class="messages"></div>
+                        </div>
+                        <div class="form_diachi_group">
+                            <h2>Quận/Huyện</h2>
+                            <input class="form_diachi_input" type="text" id="quan" placeholder="Quận/Huyện" required>
+                            <div class="messages"></div>
+                        </div>
+                        <div class="form_diachi_group">
+                            <h2>Phường/Xã</h2>
+                            <input class="form_diachi_input" type="text" id="px" placeholder="Phường/Xã" required>
+                            <div class="messages"></div>
+                        </div>
+                        <div class="form_diachi_groupp">
+                            <h2>Số điện thoại</h2>
+                            <input class="form_diachi_input" type="number" id="phone" placeholder="Nhập số điện thoại của bạn" required>
+                            <div class="messages"></div>
+                        </div>
+                        <div class="form_diachi_group">
+                            <h2>Địa chỉ nhận hàng</h2>
+                            <input class="form_diachi_input" type="text" id="adrr" required>
+                            <div class="messages"></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="thanh_toan">
+                            <h2>Phương thức thanh toán</h2>
+                            <ul>
+                                <li>
+                                    <input name="phuong_thuc" type="radio" >Chuyển khoản ngân hàng
+                                </li>
+                                <li>
+                                    <input name="phuong_thuc" type="radio" >Thanh toán bằng tiền mặt
+                                </li>
+                                <li>
+                                    <input name="phuong_thuc" type="radio" >ATM / Internet Banking
+                                </li>
+                                <li>
+                                    <input name="phuong_thuc" type="radio" >VISA / MASTER / JCB
+                                </li>
+                                <li>
+                                    <input name="phuong_thuc" type="radio" >ZaloPay
+                                </li>
+                                <li>
+                                    <input name="phuong_thuc" type="radio" >MomoPay
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="ghi_chu">
+                            <input type="radio">Ghi chú
+                            <input name="notes" type="text" placeholder="Bạn cần ghi chú chứ ?" style="display: block">
+                        </div>
+                        <div id="xac_nhan">
+                            <i class="fas fa-long-arrow-alt-left"></i>
+                            <a href="TrangMain.html">Quay lại mua hàng</a>
+                            <button type="submit" onclick="thanhtoan()">Xác nhận thanh toán </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+        <div id="footer">
+            <p>Copyright © 2020 Thegioisach.vn - All Rights Reserved.</p>
+        </div> 
+    
+    <script src="./js/script.js"></script>
+    <script>
+        Validator({
+            form:'#dat_hang',
+            rules:[
+
+            Validator.isRequired('#name'),
+            Validator.isRequired('#email'),
+            Validator.isRequired('#tp'),
+            Validator.isRequired('#quan'),
+            Validator.isRequired('#px'),
+            Validator.isRequired('#phone'),
+            Validator.isRequired('#adrr'),
+            Validator.isEmail('#email'),
+            Validator.isPhone('#phone'),
+            ]
+        });
+    </script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

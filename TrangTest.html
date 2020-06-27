@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0>
+    <title> Thế giới sách</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/454c0e581d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/styleTest.css">
+</head>
+<body>
+	<form id="fomr1" class="form-horizontal">
+		<div id="top">
+			<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        	<div class="container-fluid"> 
+            	<a class="navbar-brand" href="#">
+                	<img src="image/logo.jpg" width="75px">
+            	</a>
+              
+            	<h2>Thế giới sách</h2>
+                <form class="input" action="#">
+                    <input type="text" placeholder="Tìm sách..." name="Tìm sách" >
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            	<span class="navbar-toggler-icon"></span>
+            	</button>
+        		<div class="collapse navbar-collapse" id="navbarResponsive">
+        			<ul class="navbar-nav ml-auto">
+        				<li class="nav-items">
+        					<a class="nav-link active "href="TrangChu.html"> Trang chủ</a>
+        				</li>
+        				<li class="nav-items">
+        					<a class="nav-link active "href="#"> Tài khoản</a>
+        				</li>
+        				<li class="nav-items">
+        					<a class="nav-link active "href="TrangLienHe.html"> Liên hệ</a>
+        				</li>
+                            <li class="nav-items">
+                            <a class="nav-link active "href="TrangGioiThieu.html"> Giới thiệu</a>
+                        </li>
+        				<li class="nav-items">
+        					<a class="nav-link active "href="#"><i class="fas fa-shopping-cart">Giỏ hàng</i></a>
+                        </li>
+                           
+        			</ul>
+                   
+        		</div>
+            </div>
+            </nav>
+    	</div>
+        <img class="tittle" src="image/tittle.jpg">
+        <h3 class="text">"Sách mở ra trước mắt tôi những chân trời mới".<br>
+            <p>-Maksim Gorky-</p>
+        </h3>
+        <div id="main">
+            <div id="menu">
+                <ul>
+                    <li>
+                        <div class="dropdown">
+                            <span>Văn học Việt Nam</span>
+                                    <div class="dropdown-content">
+                                        <p>Văn học Việt Nam</p>
+                                        <p>Văn học nước ngoài</p>
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">    
+                            <span>Văn học nước ngoài</span>
+                                <div class="dropdown-content">
+                                    
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                            <div class="dropdown">
+                            <span>Sách thiếu nhi</span>
+                                <div class="dropdown-content">
+                                    
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                            <div class="dropdown">
+                            <span>Sách thiếu nhi</span>
+                                <div class="dropdown-content">
+                                    
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                            <div class="dropdown">
+                            <span>Kỹ năng sống</span>
+                                <div class="dropdown-content">
+                                    
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                            <div class="dropdown">
+                            <span>Lịch sử</span>
+                                <div class="dropdown-content">
+                                    
+                                </div>
+                            </div>
+                    </li>
+                    <li>
+                            <div class="dropdown">
+                            <span>Tự truyện</span>
+                            <div class="dropdown-content">
+                                    
+                            </div>         
+                     </div>
+                    </li>
+                  
+                </ul>
+            </div>
+                <div class="container-fluid">
+                    <div id="center">
+                        <div id="bestseller">
+                            <h2>Sách bán chạy</h2>
+                            <a class="adsbestseller" href="#"></a>
+                    </div>
+                    <div id="hotdeal">
+                        <h2>Ưu đãi lớn</h2>
+                        <a class="adshotdeal" href="#"></a>
+                </div>
+            </div>
+            </div>       
+               </div>
+            </div>
+            <div id="footer">
+            <p>Copyright © 2020 Thegioisach.vn - All Rights Reserved.</p>
+        </div>
+    
+	</form>
+      <div class="modal">
+        <div class="modal_overlay"></div>
+       
+          <div class="form-box">
+        
+              <div class="button-box">
+                 <div id="btn"></div>
+                  <button type="button" class="toggle-btn" onclick="login()" >Đăng nhập</button>
+                   <button type="button" class="toggle-btn" onclick="register()" >Đăng ký</button>
+              </div>
+              <div class="social-icon">
+                <img src="">
+                <img src="">
+              </div>
+              <form id="login" class="input-group">
+                <input class="input-field" type="text" placeholder="Họ tên của bạn">
+                        
+                      
+                            <input class="input-field" type="text" placeholder="Email của bạn">
+                     
+                     
+                            <input class="input-field" type="password" placeholder="Mật khẩu của bạn">
+                    
+                    
+                            <input class="input-field" type="password" placeholder="Nhập lại mật khẩu của bạn">
+                      
+                     
+                            <input class="input-field" type="text" placeholder="Nhập số điện thoại của bạn"> 
+                            <p class="messange"><a href="#">register</a></p>
+              </form>
+              
+              <form id="register" class="input-group">
+                <input class="input-field" type="text" placeholder="Họ tên của bạn">
+                        
+                      
+                            <input class="form_dangky_input" type="text" placeholder="Email của bạn">
+                     
+                     
+                            <input class="input-field" type="password" placeholder="Mật khẩu của bạn">
+                    
+                    
+                            <input class="input-field" type="password" placeholder="Nhập lại mật khẩu của bạn">
+                      
+                     
+                            <input class="input-field" type="text" placeholder="Nhập số điện thoại của bạn"> 
+                            <p class="messange"><a href="#">login</a></p>
+              </form>
+          </div>  
+          
+      
+
+  
+ 
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+  integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+  crossorigin="anonymous"></script>
+
+   <script type="text/javascript" src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        let x =document.getElementById('login');
+        let y =document.getElementById('register');
+        let z =document.getElementById('btn');
+
+        function register()
+        {
+            x.style.left='-480px';
+            y.style.left='50px';
+            z.style.left='110px';
+        }
+        function login()
+        {
+            x.style.left='50px';
+            y.style.left='450px';
+            z.style.left='10x';
+        }
+    </script>
+</body>
+</html>

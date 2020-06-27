@@ -1,0 +1,186 @@
+@import url('https://fonts.google.com/specimen/Libre+Franklin');
+html ,body
+{
+	width: 100%;
+	height: 100%;
+	font-family: Libre Franklin;
+	font-size: 20px;
+
+}
+.navbar
+{
+	padding: 10px 50px 10px 50px;
+	background-color: rgba(255, 123, 0, 0.726) !important;
+	height: 80px;
+}
+.navbar li a
+{
+	color: black !important
+}
+.navbar li :hover
+{
+	background: #FFFFFF;
+}
+.giohang
+{
+	background: #F1F1F1;
+}
+
+.container
+{
+    width: auto;
+    height: auto;
+}
+#center #tieude p
+{
+	float: left;
+	margin-right: 70px;
+}
+#center p a
+{
+	
+	color: red;
+}
+#center h4
+{
+	margin-top: 50px;	
+}
+#center #gia
+{
+	color: red;
+	font-size: 35px;
+}
+.box
+{
+  width: 40%;
+  height: 100%;
+  border: 1px solid white;
+  padding: 0;
+  margin-left: 0%;
+  display: inline-block;
+}
+.box img
+{
+	margin-top: 50px;
+	width: 500px;
+	height: 450px;
+}
+.box p
+{
+	font-size: 15px;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: black;
+}
+#giaodich
+{
+	width: 300px;
+	height: 100px;
+}
+#dichvu
+{
+	width: 300px;
+	height: auto;
+}
+#soluong
+{
+	
+	width: 150px;
+	height: 50px;
+}
+#soluong input
+{
+	width: 50px;
+}
+#footer
+{
+	margin-top: 100px;
+	clear: both;
+	width: auto;
+	height: 50px;
+	background-color: rgba(255, 123, 0, 0.726) !important;
+	text-align: center;
+}
+@media (max-width:1200px)
+{
+	
+}
+@media (max-width:996px)
+{
+  #center
+  {
+	margin-left: 60px;
+	margin-top: 65px;
+  }
+  #center h4
+  {
+	  font-size: 25px;
+  }
+  #center #gia
+  {
+	  margin-bottom: 0;
+  }
+  #center #giaodich
+  {
+	  height: 50px;
+  }
+  #footer
+  {
+	  clear: both;
+	  width: auto;
+	  margin-top: 60px;
+	  height: 80px;
+	  background-color: rgba(255, 123, 0, 0.726) !important;
+	  text-align: center;
+  }
+}
+
+@media (max-width:770px)
+{
+  #top nav h2
+  {
+    font-size: 30px;
+  }
+  #top nav
+  {
+      height: 300px;
+  }
+  #center 
+  {
+	margin-top: 500px;
+    margin-left: -150px;
+  }
+  #center #gia
+  {	
+	margin-top: 120px;
+  }
+
+}
+@media (max-width:574px)
+{
+  #top nav h2
+  {
+    font-size: 30px;
+  }
+  #top nav
+  {
+      height: 350px;
+  }
+  #center
+  {	
+	margin-top: -50px;
+	margin-left: 100px;
+  }
+  #center #gia
+  {	
+	margin-top: 110px;
+  }
+  #footer
+  {
+	  clear: both;
+	  width: auto;
+	  height: 80px;
+	  background-color: rgba(255, 123, 0, 0.726) !important;
+	  text-align: center;
+  }
+}

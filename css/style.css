@@ -1,0 +1,325 @@
+@import url('https://fonts.google.com/specimen/Libre+Franklin');
+html ,body
+{
+  width: 100%;
+  height: 100%;
+  font-family: Libre Franklin;
+  font-size: 20px;
+  box-sizing: border-box;
+
+}
+.navbar
+{
+  padding: 10px 50px 10px 50px;
+  background-color: rgba(255, 123, 0, 0.726) !important;
+  height: 80px;
+  
+}
+.navbar li a
+{
+  color: black !important;
+  
+  
+}
+.navbar li :hover
+{
+  background: #FFFFFF;
+  
+}
+#marquee img
+{
+  
+  height: 100px;
+}
+.giohang
+{
+  background: #F1F1F1;
+}
+.tittle
+{
+  width: 100%;
+  height: 493px;
+}
+.tittle img
+{
+  width: 100%;
+  height: 100%;
+}
+.text
+{
+  height: auto;
+  width: 60%;
+  color: white;
+  border: 1px solid #bbb;
+  background-color: #FA5858;
+  position: absolute;
+  top: 55%;
+  left: 15%;
+}
+.text h3
+{
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.text p
+{
+  padding-right: 20px;
+  text-align: right;
+  font-size: 20px;
+}
+.container-fluid
+{
+  width: 100%;
+  height: 100%;
+  
+}
+#top
+{
+  width: auto;
+  height: auto;
+}
+#main
+{
+  width: 100%;
+}
+#menu
+{
+  height: 80px;
+  background-color:  rgba(255, 123, 0, 0.726) !important;
+  display: inline-block;
+  width: 100%;
+}
+#menu ul
+{
+  list-style-type: none;
+  text-align: center;
+  margin-left: -100px;
+}
+#menu ul li
+{
+  color: white;
+  display: inline-table;
+  width: 200px;
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+  margin-left: 250px;
+}
+#menu ul li a
+{
+  color: black;
+  text-decoration: none;
+  display: block;
+  
+}
+#menu ul li ul li 
+{
+  background-color:  rgba(255, 123, 0, 0.726) !important;
+  margin-left: 250px;
+}
+#menu ul li a:hover
+{
+  background: #f1f1f1;
+  color: #333;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+
+}
+#menu ul li > .submenu
+{
+  display: none;
+  position: absolute;
+}
+#menu ul li:hover .submenu
+{
+  display: block;
+  margin-left: -250px;
+}
+#center
+{
+  height: auto;
+  width: auto;
+}
+.hotdeal h2 
+{
+  padding-top: 150px;
+  padding-left: 100px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: coral;
+}
+.gioithieusach
+{
+  margin: 20px;
+  align-items: center;
+  width: 95%;
+  height: auto;
+  border: 1px solid darkgrey ;
+}
+.gioithieusach a
+{
+  text-decoration: none;
+
+}
+
+.gioithieusach a h2
+{
+  color: coral;
+  padding-left: 100px;
+  
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  
+}
+
+.box
+{
+  width: 400px;
+  height: 350px;
+  border: 1px solid white;
+  padding: 10px;
+  margin-left: 0;
+  display: inline-block;
+}
+.box img
+{
+  width: 100%;
+  height: 100%;
+}
+.box p
+{
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: black;
+}
+
+
+
+
+#footer
+{
+  margin-top: 100px;
+  clear: both;
+  height: 50px;
+  background-color: rgba(255, 123, 0, 0.726) !important;
+  text-align: center;
+}
+@media (max-width:954px) 
+{
+ .tittle
+ {
+   display: none;
+ }
+
+ #menu ul li 
+ {
+   
+   margin-top:100px;
+   clear: both;
+   width: 20%;
+   height: 20%;
+   margin-left: 9%;
+ }
+ #menu ul li  > .submenu li 
+ {
+   margin-top: 0;
+   width: 200px;
+ }
+ .navbar
+ {
+   height: 300px;
+ }
+ .hotdeal
+ {
+   margin-top: 50px;
+   width: 900px;
+   height: 250px;
+ }
+ .hotdeal marquee
+ {
+   height: 200px;
+ }
+ .hotdeal marquee img
+  {
+  width: 250px;
+  height: 250px;
+  }
+  #vanhoc
+  {
+    margin-top: 250px;
+  }
+  .box
+  {
+  height: 200px;
+  width: 200px;
+  
+  }
+ 
+}
+@media (max-width:1299px)
+{
+  #menu ul li
+  {
+    color: white;
+    display: inline-table;
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    margin-left: 150px;
+  }
+}
+@media (max-width:700px)
+{
+  #menu ul li
+  {
+    color: white;
+    display: inline-table;
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    margin-left: 100px;
+  }
+}
+@media (max-width:550px)
+{
+  #top nav h2
+  {
+    font-size: 30px;
+  }
+  #menu ul li
+  {
+    color: white;
+    display: inline-table;
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    margin-left: 75px;
+  }
+}
+@media (max-width:480px)
+{
+  
+  #top nav h2
+  {
+    font-size: 30px;
+  }
+  #menu ul li
+  {
+    color: white;
+    display: inline-table;
+    width: 90px;
+    height: 60px;
+    line-height: 80px;
+    position: relative;
+    margin-left: 50px;
+  }
+  #footer
+  {
+  margin-top: 120px;
+  clear: both;
+  height: 80px;
+  background-color: rgba(255, 123, 0, 0.726) !important;
+  text-align: center;
+  }
+}
